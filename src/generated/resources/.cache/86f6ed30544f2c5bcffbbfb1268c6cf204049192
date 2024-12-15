@@ -1,0 +1,4 @@
+// 1.20.1	2024-12-15T18:19:54.5590373	Tags for minecraft:block mod id sanguinemod
+15fb650e187a5f75e660e088f020762482abcd14 data/minecraft/tags/blocks/mineable/pickaxe.json
+2872669ba8fc7997a607b035a2b11d7cb6918d15 data/minecraft/tags/blocks/needs_diamond_tool.json
+12e40995e352b63b2d0a934afdb97e6043773d09 data/minecraft/tags/blocks/needs_iron_tool.json

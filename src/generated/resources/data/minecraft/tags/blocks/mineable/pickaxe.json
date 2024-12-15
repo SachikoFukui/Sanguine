@@ -1,0 +1,24 @@
+{
+  "values": [
+    "sanguinemod:charred_obsidian",
+    "sanguinemod:deepslate_rubin_ore",
+    "sanguinemod:rubin_ore",
+    "sanguinemod:raw_rubin_block",
+    "sanguinemod:rubin_block",
+    "sanguinemod:inferno",
+    "sanguinemod:netherrack_bricks",
+    "sanguinemod:bleeding_netherrack_bricks",
+    "sanguinemod:cracked_netherrack_bricks",
+    "sanguinemod:polished_netherrack",
+    "sanguinemod:bleeding_netherrack",
+    "sanguinemod:charred_netherrack",
+    "sanguinemod:netherrack_slab",
+    "sanguinemod:netherrack_stairs",
+    "sanguinemod:charred_netherrack_slab",
+    "sanguinemod:charred_netherrack_stairs",
+    "sanguinemod:polished_netherrack_slab",
+    "sanguinemod:polished_netherrack_stairs",
+    "sanguinemod:netherrack_brick_slab",
+    "sanguinemod:netherrack_brick_stairs"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "sanguinemod:inferno_smelt",
+  "ingredients": [
+    {
+      "item": "minecraft:netherrack"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "sanguinemod:charred_netherrack"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sanguinemod:block/charred_netherrack_slab"
+    },
+    "type=double": {
+      "model": "sanguinemod:block/charred_netherrack"
+    },
+    "type=top": {
+      "model": "sanguinemod:block/charred_netherrack_slab_top"
+    }
+  }
+}

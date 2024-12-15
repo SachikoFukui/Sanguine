@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "$": {
+      "item": "sanguinemod:rubin"
+    }
+  },
+  "pattern": [
+    "$$$",
+    "$$$",
+    "$$$"
+  ],
+  "result": {
+    "item": "sanguinemod:rubin_block"
+  },
+  "show_notification": true
+}

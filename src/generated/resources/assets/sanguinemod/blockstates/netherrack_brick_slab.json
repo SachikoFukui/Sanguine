@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sanguinemod:block/netherrack_brick_slab"
+    },
+    "type=double": {
+      "model": "sanguinemod:block/netherrack_bricks"
+    },
+    "type=top": {
+      "model": "sanguinemod:block/netherrack_brick_slab_top"
+    }
+  }
+}

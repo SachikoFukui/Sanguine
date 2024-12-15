@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "$": {
+      "item": "sanguinemod:charred_netherrack"
+    }
+  },
+  "pattern": [
+    "$  ",
+    "$$ ",
+    "$$$"
+  ],
+  "result": {
+    "item": "sanguinemod:charred_netherrack_stairs"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "front": "sanguinemod:block/inferno_front_off",
+        "side": "sanguinemod:block/inferno_side_off",
+        "top": "sanguinemod:block/inferno_back"
+    }
+}

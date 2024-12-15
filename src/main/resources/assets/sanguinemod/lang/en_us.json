@@ -1,0 +1,42 @@
+{
+  "item.sanguinemod.raw_rubin": "Raw Rubin",
+  "item.sanguinemod.shaped_rubin": "Shaped Rubin",
+  "item.sanguinemod.rubin": "Rubin",
+
+  "block.sanguinemod.rubin_ore": "Rubin Block",
+  "block.sanguinemod.deepslate_rubin_ore": "Raw Rubin Block",
+  "block.sanguinemod.charred_obsidian": "Charred Obsidian",
+  "block.sanguinemod.rubin_block": "Block of Rubin",
+  "block.sanguinemod.raw_rubin_block": "Block of Raw Rubin",
+
+  "block.sanguinemod.charred_netherrack": "Charred Netherrack",
+  "block.sanguinemod.netherrack_bricks": "Netherrack Bricks",
+  "block.sanguinemod.polished_netherrack": "Polished Netherrack",
+  "block.sanguinemod.bleeding_netherrack": "Bleeding Netherrack",
+  "block.sanguinemod.bleeding_netherrack_bricks": "Bleeding Netherrack Bricks",
+  "block.sanguinemod.cracked_netherrack_bricks": "Cracked Netherrack Bricks",
+
+  "block.sanguinemod.netherrack_slab": "Netherrack Slab",
+  "block.sanguinemod.netherrack_stairs": "Netherrack Stairs",
+  "block.sanguinemod.charred_netherrack_slab": "Charred Netherrack Slab",
+  "block.sanguinemod.charred_netherrack_stairs": "Charred Netherrack Stairs",
+  "block.sanguinemod.polished_netherrack_slab": "Polished Netherrack Slab",
+  "block.sanguinemod.polished_netherrack_stairs": "Polished Netherrack Stairs",
+  "block.sanguinemod.netherrack_brick_slab": "Netherrack Brick Slab",
+  "block.sanguinemod.netherrack_brick_stairs": "Netherrack Brick Stairs",
+
+
+  "item.sanguinemod.hairlock": "Hairlock",
+  "item.sanguinemod.soul": "Soul",
+  "item.sanguinemod.amalgam": "Amalgam",
+
+  "block.sanguinemod.inferno": "Inferno Furnace",
+
+  "tooltip.sanguinemod.soul.tooltip": "You can hear but a wind...",
+  "tooltip.sanguinemod.amalgam.tooltip": "...Although the pure vex remains...",
+
+  "block.sanguinemod.mod_portal": "Portal",
+  "item.sanguinemod.kultysta_spawn_egg": "Kultysta Spawn Egg",
+
+  "creativetab.sanguines": "Stuff from Sanguine's Mod"
+}

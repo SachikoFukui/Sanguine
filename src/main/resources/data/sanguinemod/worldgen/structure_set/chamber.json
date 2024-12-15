@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "sanguinemod:chamber",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642136474,
+
+    "spacing": 20,
+
+    "separation": 10,
+
+    "type": "minecraft:random_spread"
+  }
+}

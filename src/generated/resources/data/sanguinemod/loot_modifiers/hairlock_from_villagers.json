@@ -1,0 +1,14 @@
+{
+  "type": "sanguinemod:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/villager"
+    },
+    {
+      "chance": 0.2,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "sanguinemod:hairlock"
+}

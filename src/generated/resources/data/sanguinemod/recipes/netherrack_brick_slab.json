@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "$": {
+      "item": "sanguinemod:netherrack_bricks"
+    }
+  },
+  "pattern": [
+    "$$$"
+  ],
+  "result": {
+    "item": "sanguinemod:netherrack_brick_slab"
+  },
+  "show_notification": true
+}

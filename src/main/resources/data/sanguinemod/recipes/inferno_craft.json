@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:netherrack"
+    },
+    "I": {
+      "item": "sanguinemod:shaped_rubin"
+    },
+    "X": {
+      "item": "minecraft:blast_furnace"
+    },
+    "P": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "IPI",
+    "IXI",
+    "###"
+  ],
+  "result": {
+    "item": "sanguinemod:inferno"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "sanguinemod:fountain",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642136474,
+
+    "spacing": 10,
+
+    "separation": 6,
+
+    "type": "minecraft:random_spread"
+  }
+}

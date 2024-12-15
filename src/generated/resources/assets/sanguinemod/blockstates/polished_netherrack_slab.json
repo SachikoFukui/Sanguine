@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sanguinemod:block/polished_netherrack_slab"
+    },
+    "type=double": {
+      "model": "sanguinemod:block/polished_netherrack"
+    },
+    "type=top": {
+      "model": "sanguinemod:block/polished_netherrack_slab_top"
+    }
+  }
+}

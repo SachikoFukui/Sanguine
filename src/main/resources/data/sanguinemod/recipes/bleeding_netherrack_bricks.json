@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "sanguinemod:netherrack_bricks"
+    },
+    "$": {
+      "item": "sanguinemod:soul"
+    }
+  },
+  "pattern": [
+    " $ ",
+    "$#$",
+    " $ "
+  ],
+  "result": {
+    "item": "sanguinemod:bleeding_netherrack_bricks"
+  },
+  "show_notification": true
+}

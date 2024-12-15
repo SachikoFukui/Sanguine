@@ -1,0 +1,25 @@
+{
+  "name": "sanguinemod:fountain/start_pool",
+
+  "fallback": "minecraft:empty",
+
+
+  "elements": [
+    {
+
+
+      "weight": 1,
+      "element": {
+
+        "location": "sanguinemod:fountain",
+
+        "processors": "minecraft:empty",
+
+
+        "projection": "terrain_matching",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

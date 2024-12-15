@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shaped_rubin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sanguinemod:shaped_rubin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sanguinemod:rubin_from_smelting_shaped_rubin"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_shaped_rubin",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sanguinemod:rubin_from_smelting_shaped_rubin"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,12 @@
+{
+  "type": "sanguinemod:inferno_smelt",
+  "ingredients": [
+    {
+      "item": "sanguinemod:shaped_rubin"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "sanguinemod:rubin"
+  }
+}
