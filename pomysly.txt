@@ -1,1 +1,32 @@
 piwo
+
+Soul i Amalgam dodają czas, a nie dają inną wartość
+
+Kultysta:
+    Customowe dźwięki
+
+Agony:
+    Zrobić aby agony się respiło w netherze
+    Mgła na Agony
+    Bardziej czerwona woda
+    Spawn Kultysty na biomie
+    Zrobić głębsze bloki
+    Zmiana koloru liści Spruce, Birch, Cherry
+
+Inferno:
+    Obrót inferno wzgledem polozenia
+    Włożenie innego bloku zrobi, że zamieni się w popiół
+
+Struktury:
+    Zmiana Fountain na nie łaczenie sie z terenem
+    Ograniczyć Chamber w Sanguine, aby ten nie respil sie albo respil w zmienionej formie
+    Zrobić aby, nie respiły się na wodzie
+    Zrobić je rzadziej
+
+Sanguine:
+    Zmiana Basalt Deltas
+    Zmiana Portalu (jakis fajowy zrobic)
+    Zmienić nazwę sanguinemod:agony na Ahony
+    CAŁE jeziora z krwi
+
+

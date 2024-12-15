@@ -34,11 +34,11 @@ public class ModDimensions {
         context.register(SANGUINE_DIM_TYPE, new DimensionType(
                 OptionalLong.of(12000), // fixedTime
                 false, // hasSkylight
-                false, // hasCeiling
-                false, // ultraWarm
+                true, // hasCeiling
+                true, // ultraWarm
                 false, // natural
                 1.0, // coordinateScale
-                true, // bedWorks
+                false, // bedWorks
                 true, // respawnAnchorWorks
                 0, // minY
                 256, // height
@@ -69,7 +69,7 @@ public class ModDimensions {
                         ))),
                 noiseGenSettings.getOrThrow(NoiseGeneratorSettings.AMPLIFIED));
 
-        LevelStem stem = new LevelStem(dimTypes.getOrThrow(ModDimensions.SANGUINE_DIM_TYPE), noiseBasedChunkGenerator);
+        LevelStem stem = new LevelStem(dimTypes.getOrThrow(ModDimensions.SANGUINE_DIM_TYPE), wrappedChunkGenerator);
 
         context.register(SANGUINE_KEY, stem);
     }

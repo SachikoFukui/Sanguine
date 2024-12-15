@@ -27,7 +27,7 @@ public class ModPlacedFeature {
         ModOrePlacement.commonOrePlacement(6, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64),VerticalAnchor.absolute(50))));
 
         register(context, BLEEDING_NETHERRACK_PLACED_KEY, configuredFeatures.getOrThrow(ModConfigureFeature.NETHER_BLEEDING_NETHERRACK_KEY),
-        ModOrePlacement.commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(-80),VerticalAnchor.absolute(30))));
+        ModOrePlacement.commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(0),VerticalAnchor.absolute(30))));
 
     }
 
