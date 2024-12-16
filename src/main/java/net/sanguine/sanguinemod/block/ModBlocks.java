@@ -19,6 +19,11 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Sanguine.MODID);
 
+    public static final RegistryObject<Block> INFERNO = registerBlock("inferno",
+            () -> new Inferno(BlockBehaviour.Properties.copy(Blocks.BLAST_FURNACE)));
+    public static final RegistryObject<Block> MOD_PORTAL = registerBlock("mod_portal",
+            () -> new ModPortalBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noLootTable().noOcclusion().noLootTable()));
+
     public static final RegistryObject<Block> CHARRED_OBSIDIAN = registerBlock("charred_obsidian",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN)));
 
@@ -73,10 +78,7 @@ public class ModBlocks {
 
 
 
-    public static final RegistryObject<Block> INFERNO = registerBlock("inferno",
-            () -> new Inferno(BlockBehaviour.Properties.copy(Blocks.BLAST_FURNACE)));
-    public static final RegistryObject<Block> MOD_PORTAL = registerBlock("mod_portal",
-            () -> new ModPortalBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noLootTable().noOcclusion().noLootTable()));
+
 //    public static final RegistryObject<Block> PIEC_CUSTOM = registerBlock("piec_custom",
 //            () -> new Inferno(BlockBehaviour.Properties.copy(Blocks.BLAST_FURNACE)));
 

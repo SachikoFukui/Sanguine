@@ -13,10 +13,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
@@ -46,13 +43,16 @@ public class KultystaEntity extends Monster {
         }
     }
     private void setupAnimationStates(){
-        if(this.prayTimeout <=0){
+        if(this.prayTimeout <=0  && !this.isWalking()) {
             this.prayTimeout = this.random.nextInt(40) + 80;
             this.prayState.start(this.tickCount);
         } else{
             --this.prayTimeout;
         }
 
+        if (this.isWalking()) {
+             prayState.stop();
+        }
 //        if (this.isAttacking() && attackAnimationTimeout <= 0) {
 //            attackAnimationTimeout = 20; // Długość ataku w tickach (4 sekundy)
 //            attackAnimationState.start((this.tickCount));
@@ -63,6 +63,9 @@ public class KultystaEntity extends Monster {
 //            attackAnimationState.stop();
 //        }
     }
+    private boolean isWalking() {
+    return this.getPose() == Pose.STANDING && this.getDeltaMovement().length() > 0.01;
+}
 
     @Override
     protected void updateWalkAnimation(float pPartialTick) {
@@ -93,7 +96,7 @@ public class KultystaEntity extends Monster {
         this.goalSelector.addGoal(0, new FloatGoal(this));
 
         this.goalSelector.addGoal(1, new KultystaAttackGoal(this,0.20, true));
-        this.goalSelector.addGoal(2, new RandomStrollGoal(this,0.1 ));
+//        this.goalSelector.addGoal(2, new RandomStrollGoal(this,0.1 ));
         this.goalSelector.addGoal(9, new LookAtPlayerGoal(this, Player.class, 2F, 1.0F));
 
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
@@ -106,7 +109,7 @@ public class KultystaEntity extends Monster {
                 .add(Attributes.ARMOR_TOUGHNESS, 2f)
                 .add(Attributes.ATTACK_DAMAGE, 5)
                 .add(Attributes.MOVEMENT_SPEED, 2)
-                .add(Attributes.ATTACK_SPEED, 1);
+                .add(Attributes.ATTACK_SPEED, 2);
     }
 
     @Override

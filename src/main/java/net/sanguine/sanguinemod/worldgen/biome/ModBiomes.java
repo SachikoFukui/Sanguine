@@ -33,8 +33,7 @@ public class ModBiomes {
 
      public static Biome agonyBiome(BootstapContext<Biome> context) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
-        spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.KULTYSTA.get(), 2, 5, 10));
-        spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.WOLF, 2, 5, 10));
+        spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.KULTYSTA.get(), 100, 5, 10));
 
         BiomeDefaultFeatures.commonSpawns(spawnBuilder);
 

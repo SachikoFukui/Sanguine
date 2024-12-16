@@ -13,17 +13,16 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.AbstractFurnaceBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.FurnaceBlock;
-import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.network.NetworkHooks;
 import net.sanguine.sanguinemod.block.entity.InfernoEntity;
@@ -35,34 +34,22 @@ public class Inferno extends AbstractFurnaceBlock {
         super(pProperties);
     }
 
+    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+    public static final BooleanProperty LIT = BlockStateProperties.LIT;
+
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
+//        builder.add(FACING);
     }
 
 
-    //LIT
-    public static final BooleanProperty LIT = FurnaceBlock.LIT;
-    public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
-      if (pState.getValue(LIT)) {
-         double d0 = (double)pPos.getX() + 0.5D;
-         double d1 = (double)pPos.getY();
-         double d2 = (double)pPos.getZ() + 0.5D;
-         if (pRandom.nextDouble() < 0.1D) {
-            pLevel.playLocalSound(d0, d1, d2, SoundEvents.FURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 10.0F, 1.0F, false);
-         }
 
-         Direction direction = pState.getValue(FACING);
-         Direction.Axis direction$axis = direction.getAxis();
-         double d3 = 0.52D;
-         double d4 = pRandom.nextDouble() * 0.6D - 0.3D;
-         double d5 = direction$axis == Direction.Axis.X ? (double)direction.getStepX() * 0.52D : d4;
-         double d6 = pRandom.nextDouble() * 6.0D / 16.0D;
-         double d7 = direction$axis == Direction.Axis.Z ? (double)direction.getStepZ() * 0.52D : d4;
-         pLevel.addParticle(ParticleTypes.SMOKE, d0 + d5, d1 + d6, d2 + d7, 0.0D, 0.0D, 0.0D);
-         pLevel.addParticle(ParticleTypes.FLAME, d0 + d5, d1 + d6, d2 + d7, 0.0D, 0.0D, 0.0D);
-      }
-   }
+    @Override
+    public BlockState mirror(BlockState pState, Mirror pMirror) {
+         return pState.rotate(pMirror.getRotation(pState.getValue(FACING)));
+    }
+
    public void tick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
       if (pState.getValue(LIT)) {
          pLevel.setBlock(pPos, pState.cycle(LIT), 2);
@@ -70,8 +57,11 @@ public class Inferno extends AbstractFurnaceBlock {
 
    }
    @Nullable
-   public BlockState getStateForPlacement(BlockPlaceContext pContext) {
-      return this.defaultBlockState().setValue(LIT, Boolean.valueOf(pContext.getLevel().hasNeighborSignal(pContext.getClickedPos())));
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext pContext) {
+        return this.defaultBlockState()
+            .setValue(FACING, pContext.getHorizontalDirection().getOpposite())
+            .setValue(LIT, pContext.getLevel().hasNeighborSignal(pContext.getClickedPos()));
    }
 
     @Override

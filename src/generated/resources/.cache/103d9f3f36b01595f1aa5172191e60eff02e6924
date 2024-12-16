@@ -1,10 +1,10 @@
-// 1.20.1	2024-12-15T17:03:39.8872148	Registries
-fcce69a716897721b2f4cdfff6b061c079c0e60d data/sanguinemod/dimension/sanguine.json
-a1582e21d4727fc3ba87bff49c837fac41b9cd30 data/sanguinemod/dimension_type/sanguine_type.json
+// 1.20.1	2024-12-16T18:16:18.9072979	Registries
+0f9addb16722dac6a9b182c71f8f790f82f87dea data/sanguinemod/dimension/sanguine.json
+cd850555e934c7b0af6b5342d30648d4349b5b15 data/sanguinemod/dimension_type/sanguine_type.json
 0d5a3513b847867e96371e4871ac436dcfcc2d66 data/sanguinemod/forge/biome_modifier/add_bleeding_netherrack.json
 849f032d325dd7aba8bd3f6a399694c3ac4c8ee7 data/sanguinemod/forge/biome_modifier/add_rubin_ore.json
-d78e87ed2d738c12247fa6ce45543142821366fb data/sanguinemod/worldgen/biome/agony.json
+ac4cf6313c76846c24fa1b70e25e9a530b2a9c2e data/sanguinemod/worldgen/biome/agony.json
 1a75897a16795a5759bcc1442cad38ad7077263c data/sanguinemod/worldgen/configured_feature/bleeding_netherrack.json
 e961d756e0ea5b8b1b0f68165bfaf5cc50f89606 data/sanguinemod/worldgen/configured_feature/rubin_ore.json
-16ecd50f28621ace6aefcc59c6fc334f58cf1f43 data/sanguinemod/worldgen/placed_feature/bleeding_netherrack_placed.json
+0ff1ea5e3ed4e881b572231226a3bf962cef3fd6 data/sanguinemod/worldgen/placed_feature/bleeding_netherrack_placed.json
 3254f3721e163ca17e452fc33f67549c759e6b34 data/sanguinemod/worldgen/placed_feature/rubin_ore_placed.json

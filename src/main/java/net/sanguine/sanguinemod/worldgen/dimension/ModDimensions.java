@@ -32,10 +32,10 @@ public class ModDimensions {
 
     public static void bootstrapType(BootstapContext<DimensionType> context) {
         context.register(SANGUINE_DIM_TYPE, new DimensionType(
-                OptionalLong.of(12000), // fixedTime
+                OptionalLong.of(6000), // fixedTime
                 false, // hasSkylight
                 true, // hasCeiling
-                true, // ultraWarm
+                false, // ultraWarm
                 false, // natural
                 1.0, // coordinateScale
                 false, // bedWorks
@@ -43,9 +43,10 @@ public class ModDimensions {
                 0, // minY
                 256, // height
                 256, // logicalHeight
-                BlockTags.INFINIBURN_OVERWORLD, // infiniburn
-                BuiltinDimensionTypes.OVERWORLD_EFFECTS, // effectsLocation
-                1.0f, // ambientLight
+                BlockTags.INFINIBURN_END, // infiniburn
+                BuiltinDimensionTypes.NETHER_EFFECTS, // effectsLocation
+                0.0f, // ambientLight
+
                 new DimensionType.MonsterSettings(false, false, ConstantInt.of(0), 0)));
     }
 
@@ -56,7 +57,7 @@ public class ModDimensions {
 
         NoiseBasedChunkGenerator wrappedChunkGenerator = new NoiseBasedChunkGenerator(
                 new FixedBiomeSource(biomeRegistry.getOrThrow(ModBiomes.AGONY)),
-                noiseGenSettings.getOrThrow(NoiseGeneratorSettings.AMPLIFIED));
+                noiseGenSettings.getOrThrow(NoiseGeneratorSettings.END));
 
         NoiseBasedChunkGenerator noiseBasedChunkGenerator = new NoiseBasedChunkGenerator(
                 MultiNoiseBiomeSource.createFromList(
@@ -67,9 +68,9 @@ public class ModDimensions {
 
 
                         ))),
-                noiseGenSettings.getOrThrow(NoiseGeneratorSettings.AMPLIFIED));
+                noiseGenSettings.getOrThrow(NoiseGeneratorSettings.END));
 
-        LevelStem stem = new LevelStem(dimTypes.getOrThrow(ModDimensions.SANGUINE_DIM_TYPE), wrappedChunkGenerator);
+        LevelStem stem = new LevelStem(dimTypes.getOrThrow(ModDimensions.SANGUINE_DIM_TYPE),noiseBasedChunkGenerator);
 
         context.register(SANGUINE_KEY, stem);
     }

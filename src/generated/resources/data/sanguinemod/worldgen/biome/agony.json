@@ -72,22 +72,15 @@
       }
     ],
     "axolotls": [],
-    "creature": [
+    "creature": [],
+    "misc": [],
+    "monster": [
       {
         "type": "sanguinemod:kultysta",
         "maxCount": 10,
         "minCount": 5,
-        "weight": 2
+        "weight": 100
       },
-      {
-        "type": "minecraft:wolf",
-        "maxCount": 10,
-        "minCount": 5,
-        "weight": 2
-      }
-    ],
-    "misc": [],
-    "monster": [
       {
         "type": "minecraft:spider",
         "maxCount": 4,

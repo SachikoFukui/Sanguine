@@ -1,42 +1,40 @@
-[15gru2024 18:31:38.594] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Jakub\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.11, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, sanguinemod, --all, --output, D:\Modding Minecraft\Sanguine\src\generated\resources, --existing, D:\Modding Minecraft\Sanguine\src\main\resources]
-[15gru2024 18:31:38.597] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[15gru2024 18:31:38.677] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[15gru2024 18:31:38.710] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Jakub/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[15gru2024 18:31:38.912] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jakub\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.11\427f703e065645e6ab0d183bfaee6253f474393d\javafmllanguage-1.20.1-47.3.11.jar is missing mods.toml file
-[15gru2024 18:31:38.914] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jakub\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.11\f59825d2e5d797a1bb3699876861d9f5cd616ad0\lowcodelanguage-1.20.1-47.3.11.jar is missing mods.toml file
-[15gru2024 18:31:38.917] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jakub\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.11\6624469b892cf7349addc8c7272ba0f9c1628e3f\mclanguage-1.20.1-47.3.11.jar is missing mods.toml file
-[15gru2024 18:31:38.919] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jakub\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.11\19742efc9b2d4063f19579d80f99579725e034eb\fmlcore-1.20.1-47.3.11.jar is missing mods.toml file
-[15gru2024 18:31:38.982] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[15gru2024 18:31:39.906] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[15gru2024 18:31:39.910] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Jakub\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, sanguinemod, --all, --output, D:\Modding Minecraft\Sanguine\src\generated\resources, --existing, D:\Modding Minecraft\Sanguine\src\main\resources]
-[15gru2024 18:31:40.141] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using D:\Modding Minecraft\Sanguine\build\createSrgToMcp\output.srg
-[15gru2024 18:31:40.143] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using D:\Modding Minecraft\Sanguine\build\createSrgToMcp\output.srg
-[15gru2024 18:31:40.362] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [sanguinemod]
-[15gru2024 18:31:43.133] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.11, for MC 1.20.1 with MCP 20230612.114412
-[15gru2024 18:31:43.133] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.11 Initialized
-[15gru2024 18:31:43.153] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
-[15gru2024 18:31:43.153] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
-[15gru2024 18:31:43.154] [modloading-worker-0/INFO] [terrablender/]: Registered region sanguinemod:overworld to index 1 for type OVERWORLD
-[15gru2024 18:31:43.154] [modloading-worker-0/INFO] [terrablender/]: Registered region sanguinemod:nether to index 1 for type NETHER
-[15gru2024 18:31:43.254] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[15gru2024 18:31:43.258] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 1.892 ms
-[15gru2024 18:31:43.421] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Jakub/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.11_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.3.11_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[15gru2024 18:31:43.422] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Jakub/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.11_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.3.11_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[15gru2024 18:31:43.536] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[15gru2024 18:31:43.565] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 28 ms
-[15gru2024 18:31:43.566] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[15gru2024 18:31:43.599] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 33 ms
-[15gru2024 18:31:43.599] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: sanguinemod
-[15gru2024 18:31:43.710] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: sanguinemod finished after 110 ms
-[15gru2024 18:31:43.710] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: sanguinemod
-[15gru2024 18:31:43.714] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: sanguinemod finished after 3 ms
-[15gru2024 18:31:43.714] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id sanguinemod
-[15gru2024 18:31:43.723] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id sanguinemod finished after 8 ms
-[15gru2024 18:31:43.723] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id sanguinemod
-[15gru2024 18:31:43.724] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id sanguinemod finished after 0 ms
-[15gru2024 18:31:43.724] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : sanguinemod
-[15gru2024 18:31:43.727] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : sanguinemod finished after 3 ms
-[15gru2024 18:31:43.727] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[15gru2024 18:31:43.739] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 11 ms
-[15gru2024 18:31:43.739] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 203 ms
-[15gru2024 18:31:43.747] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 140, old count: 124, new count: 141, removed stale: 0, written: 16
+[16gru2024 22:34:23.227] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Jakub\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.11, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, sanguinemod, --all, --output, D:\Modding Minecraft\Sanguine\src\generated\resources, --existing, D:\Modding Minecraft\Sanguine\src\main\resources]
+[16gru2024 22:34:23.230] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[16gru2024 22:34:23.309] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[16gru2024 22:34:23.343] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Jakub/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[16gru2024 22:34:23.560] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jakub\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.11\427f703e065645e6ab0d183bfaee6253f474393d\javafmllanguage-1.20.1-47.3.11.jar is missing mods.toml file
+[16gru2024 22:34:23.562] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jakub\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.11\f59825d2e5d797a1bb3699876861d9f5cd616ad0\lowcodelanguage-1.20.1-47.3.11.jar is missing mods.toml file
+[16gru2024 22:34:23.565] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jakub\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.11\6624469b892cf7349addc8c7272ba0f9c1628e3f\mclanguage-1.20.1-47.3.11.jar is missing mods.toml file
+[16gru2024 22:34:23.567] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Jakub\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.11\19742efc9b2d4063f19579d80f99579725e034eb\fmlcore-1.20.1-47.3.11.jar is missing mods.toml file
+[16gru2024 22:34:23.627] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[16gru2024 22:34:24.433] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[16gru2024 22:34:24.436] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Jakub\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, sanguinemod, --all, --output, D:\Modding Minecraft\Sanguine\src\generated\resources, --existing, D:\Modding Minecraft\Sanguine\src\main\resources]
+[16gru2024 22:34:24.745] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using D:\Modding Minecraft\Sanguine\build\createSrgToMcp\output.srg
+[16gru2024 22:34:24.747] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using D:\Modding Minecraft\Sanguine\build\createSrgToMcp\output.srg
+[16gru2024 22:34:24.985] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [sanguinemod]
+[16gru2024 22:34:28.001] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.11, for MC 1.20.1 with MCP 20230612.114412
+[16gru2024 22:34:28.003] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.11 Initialized
+[16gru2024 22:34:28.027] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[16gru2024 22:34:28.027] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[16gru2024 22:34:28.028] [modloading-worker-0/INFO] [terrablender/]: Registered region sanguinemod:overworld to index 1 for type OVERWORLD
+[16gru2024 22:34:28.028] [modloading-worker-0/INFO] [terrablender/]: Registered region sanguinemod:nether to index 1 for type NETHER
+[16gru2024 22:34:28.315] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Jakub/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.11_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.3.11_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[16gru2024 22:34:28.316] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Jakub/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.11_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.3.11_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[16gru2024 22:34:28.418] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[16gru2024 22:34:28.443] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 23 ms
+[16gru2024 22:34:28.443] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[16gru2024 22:34:28.469] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 26 ms
+[16gru2024 22:34:28.469] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: sanguinemod
+[16gru2024 22:34:28.588] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: sanguinemod finished after 118 ms
+[16gru2024 22:34:28.588] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: sanguinemod
+[16gru2024 22:34:28.592] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: sanguinemod finished after 4 ms
+[16gru2024 22:34:28.592] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id sanguinemod
+[16gru2024 22:34:28.602] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id sanguinemod finished after 8 ms
+[16gru2024 22:34:28.602] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id sanguinemod
+[16gru2024 22:34:28.603] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id sanguinemod finished after 0 ms
+[16gru2024 22:34:28.603] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : sanguinemod
+[16gru2024 22:34:28.611] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : sanguinemod finished after 7 ms
+[16gru2024 22:34:28.611] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[16gru2024 22:34:28.625] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 14 ms
+[16gru2024 22:34:28.625] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 206 ms
+[16gru2024 22:34:28.632] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 140, old count: 140, new count: 141, removed stale: 0, written: 0
