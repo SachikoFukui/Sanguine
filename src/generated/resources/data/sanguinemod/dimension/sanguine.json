@@ -18,7 +18,7 @@
           }
         },
         {
-          "biome": "minecraft:basalt_deltas",
+          "biome": "sanguinemod:nihil",
           "parameters": {
             "continentalness": 0.0,
             "depth": 0.0,

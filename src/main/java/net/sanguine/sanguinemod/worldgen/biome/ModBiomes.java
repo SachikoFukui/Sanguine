@@ -18,8 +18,12 @@ public class ModBiomes {
     public static final ResourceKey<Biome> AGONY = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(Sanguine.MODID, "agony"));
 
+    public static final ResourceKey<Biome> NIHIL = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(Sanguine.MODID, "nihil"));
+
     public static void boostrap(BootstapContext<Biome> context){
         context.register(AGONY, agonyBiome(context));
+        context.register(NIHIL, nihilBiome(context));
     }
 
     public static void globalOverworldGeneration(BiomeGenerationSettings.Builder builder) {
@@ -70,4 +74,34 @@ public class ModBiomes {
                         .build())
                 .build();
     }
+    public static Biome nihilBiome(BootstapContext<Biome> context) {
+        MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
+
+        BiomeDefaultFeatures.commonSpawns(spawnBuilder);
+
+        BiomeGenerationSettings.Builder biomeBuilder =
+                new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
+       globalOverworldGeneration(biomeBuilder);
+
+
+        return new Biome.BiomeBuilder()
+                .hasPrecipitation(true)
+                .downfall(0.8f)
+                .temperature(0.7f)
+                .generationSettings(biomeBuilder.build())
+                .mobSpawnSettings(spawnBuilder.build())
+                .specialEffects((new BiomeSpecialEffects.Builder())
+                        .waterColor(0x00000)
+                        .waterFogColor(0x00000)
+                        .skyColor(0x00000)
+                        .grassColorOverride(0x00000)
+                        .foliageColorOverride(0x00000)
+                        .fogColor(0x00000)
+                        .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS)
+
+                        .build())
+                .build();
+    }
+
+
 }

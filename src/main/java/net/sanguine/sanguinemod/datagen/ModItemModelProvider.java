@@ -55,6 +55,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.NETHERRACK_BRICKS_STAIRS);
         evenSimplerBlockItem(ModBlocks.NETHERRACK_BRICKS_SLAB);
 
+        simpleItem(ModItems.BLOOD_BUCKET);
+
 //        simpleItem(ModItems.METAL_DETECTOR);
 //        simpleItem(ModItems.GRAPE);
 //

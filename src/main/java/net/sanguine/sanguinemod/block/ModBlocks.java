@@ -11,6 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.sanguine.sanguinemod.Sanguine;
 import net.sanguine.sanguinemod.block.custom.Inferno;
 import net.sanguine.sanguinemod.block.custom.ModPortalBlock;
+import net.sanguine.sanguinemod.fluid.ModFluids;
 import net.sanguine.sanguinemod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -53,7 +54,7 @@ public class ModBlocks {
      public static final RegistryObject<Block> NETHERRACK_SLAB = registerBlock("netherrack_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).explosionResistance(6)));
     public static final RegistryObject<Block> NETHERRACK_STAIRS = registerBlock("netherrack_stairs",
-            () -> new StairBlock(() -> Blocks.NETHERRACK.defaultBlockState(),
+            () -> new StairBlock(Blocks.NETHERRACK::defaultBlockState,
                     BlockBehaviour.Properties.copy(Blocks.NETHERRACK).explosionResistance(6)));
 
     public static final RegistryObject<Block> CHARRED_NETHERRACK_SLAB = registerBlock("charred_netherrack_slab",
@@ -75,6 +76,8 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.NETHERRACK).explosionResistance(6)));
 
 
+    public static final RegistryObject<LiquidBlock> BLOOD_BLOCK = BLOCKS.register("blood_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_BLOOD, BlockBehaviour.Properties.copy(Blocks.WATER).noLootTable()));
 
 
 

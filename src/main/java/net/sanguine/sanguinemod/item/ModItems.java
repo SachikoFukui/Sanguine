@@ -1,9 +1,7 @@
 package net.sanguine.sanguinemod.item;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -12,6 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sanguine.sanguinemod.Sanguine;
 import net.sanguine.sanguinemod.entity.ModEntities;
+import net.sanguine.sanguinemod.fluid.ModFluids;
 import net.sanguine.sanguinemod.item.custom.ModFoods;
 import org.jetbrains.annotations.Nullable;
 
@@ -29,6 +28,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HAIRLOCK = ITEMS.register("hairlock",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOOD_BUCKET = ITEMS.register("blood_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_BLOOD,
+                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static final RegistryObject<Item> SOUL = ITEMS.register("soul",
             () -> new Item(new Item.Properties().food(ModFoods.SOUL)){

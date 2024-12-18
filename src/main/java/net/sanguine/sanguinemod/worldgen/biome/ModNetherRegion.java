@@ -20,8 +20,8 @@ public class ModNetherRegion extends Region {
 
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
-        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
-            modifiedVanillaOverworldBuilder.replaceBiome(Biomes.BADLANDS, ModBiomes.AGONY);
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedNetherOverworldBuilder -> {
+            modifiedNetherOverworldBuilder.replaceBiome(Biomes.BADLANDS, ModBiomes.AGONY);
         });
     }
 }

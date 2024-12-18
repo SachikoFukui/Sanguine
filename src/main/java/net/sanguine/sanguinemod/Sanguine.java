@@ -2,6 +2,8 @@ package net.sanguine.sanguinemod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.levelgen.SurfaceRules;
@@ -19,6 +21,8 @@ import net.sanguine.sanguinemod.block.ModBlocks;
 import net.sanguine.sanguinemod.block.entity.ModBlockEntities;
 import net.sanguine.sanguinemod.entity.ModEntities;
 import net.sanguine.sanguinemod.entity.client.KultystaRenderer;
+import net.sanguine.sanguinemod.fluid.ModFluidTypes;
+import net.sanguine.sanguinemod.fluid.ModFluids;
 import net.sanguine.sanguinemod.item.custom.ModCreativeModTabs;
 import net.sanguine.sanguinemod.item.ModItems;
 import net.sanguine.sanguinemod.loot.ModLootModifiers;
@@ -48,8 +52,8 @@ public class Sanguine {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
-
+        ModFluids.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
         ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -69,6 +73,7 @@ public class Sanguine {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() ->{
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MODID, ModSurfaceRules.makeRules());
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.NETHER, MODID, ModSurfaceRules.makeRules());
         });
 
     }
@@ -104,6 +109,9 @@ public class Sanguine {
             EntityRenderers.register(ModEntities.KULTYSTA.get(), KultystaRenderer::new);
 
             MenuScreens.register(ModMenuTypes.INFERNO_MENU.get(), InfernoScreen::new);
+
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_BLOOD.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_BLOOD.get(), RenderType.translucent());
         }
     }
 }

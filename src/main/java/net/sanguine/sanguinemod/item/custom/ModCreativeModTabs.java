@@ -50,6 +50,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SOUL.get());
                         pOutput.accept(ModItems.AMALGAM.get());
 
+                        pOutput.accept(ModItems.BLOOD_BUCKET.get());
 
                         pOutput.accept(ModBlocks.INFERNO.get());
                         pOutput.accept(ModBlocks.MOD_PORTAL.get());
